@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бургеры</title>
+</head>
+
+<body>
+    <h3> Заказ бургеров </h3>
+    <form method="POST" id='order' onsubmit="return false">
+        <p><b>Сформируйте заказ</b></p>
+
+        <p>Размер</p>
+
+        <div style="border: 2px solid black; border-radius: 10px; width:500px ">
+            <p><input name="size" type="radio" value="small" checked> Маленький 50 руб.</p>
+            <p><input name="size" type="radio" value="big"> Большой 100 руб.</p>
+        </div>
+
+        <p>Начинка</p>
+
+        <div style="border: 2px solid black; border-radius: 10px; width:500px ">
+            <p><input name="stuffing" type="radio" value="cheese" checked> Сыр +10 руб.</p>
+            <p><input name="stuffing" type="radio" value="salad"> Салат +20 руб.</p>
+            <p><input name="stuffing" type="radio" value="potato"> Картофель +15 руб.</p>
+        </div>
+
+        <p>Дополнительно</p>
+
+        <div style="border: 2px solid black; border-radius: 10px; width:500px ">
+            <p><input id="spice" type="checkbox" value="spice"> Добавить приправы +15 руб.</p>
+            <p><input id="sauce" type="checkbox" value="sauce"> Полить майонезом +20 руб.</p>
+        </div>
+
+        <br>
+
+        <button onclick="makeOrder()">Сформировать заказ</button>
+    </form>
+
+    <br>
+
+    <div id="showContent">
+
+    </div>
+
+    <br>
+
+    <div id="info"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
