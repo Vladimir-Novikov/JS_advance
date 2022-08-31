@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>regExp</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <p>
+                Исходный текст
+            </p>
+            <br>
+            <p id="original_text">
+
+            </p>
+
+        </div>
+
+        <div class="right">
+            <p>
+                Обработанный текст
+            </p>
+            <br>
+            <p id="modified_text">
+
+            </p>
+        </div>
+    </div>
+
+    <input type="button" id="button_one" value="Замена всех одиночных кавычек">
+    <input type="button" id="button_two" value="Умная замена">
+
+
+    <form method="POST" class='form'>
+
+
+        <div class="form_div">
+            <input class='input_field' type="text" id="name" name="name" placeholder="name">
+        </div>
+
+        <div class="form_div">
+            <input class='input_field' type="phone" id="phone" placeholder="phone +7(000)000-0000">
+        </div>
+
+        <div class="form_div">
+            <input class='input_field' type="text" id="mail" name="student_email" placeholder="email">
+        </div>
+        <div class="form_div">
+            <textarea class='input_field' id="text" name="student_bio"></textarea>
+        </div>
+
+        <div class="form_btn">
+            <input type="submit" id="button" value="Отправить">
+            <div id="msg"></div>
+        </div>
+
+
+
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
