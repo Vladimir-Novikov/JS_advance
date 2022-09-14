@@ -1,0 +1,27 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 123,
+            "product_name": "Ноутбук",
+            "price": 45600,
+            "img": "./img/123.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 333,
+            "product_name": "Принтер",
+            "price": 1600,
+            "img": "./img/333.jpg"
+        },
+        {
+            "quantity": 3,
+            "id_product": 254,
+            "product_name": "Сетевой фильтр",
+            "price": 3000,
+            "img": "./img/254.jpg"
+        }
+    ]
+}
